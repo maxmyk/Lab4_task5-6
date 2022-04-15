@@ -1,8 +1,11 @@
 """
 Slightly updated game.py module
 """
-
-from game import Item, Character, Enemy, Friend, Room, main_character
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from task5.game import Item, Character, Enemy, Friend, Room, main_character
+# from game import Item, Character, Enemy, Friend, Room, main_character
 
 main_character.lives = 1
 main_character.friends = []
